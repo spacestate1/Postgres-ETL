@@ -9,7 +9,9 @@ import SQL_ETL_IP
 import SQL_ETL_IP2
 
 
-conn = psycopg2.connect(database="DATABASENAME", user="USERNAME", password="PASSWORD", host="IP", port="PORTNUM")
+conn = psycopg2.connect(database='DATABASENAME', user='USERNAME', password='PASSWORD', host='IP', port='PORTNUM', sslmode='require', sslrootcert='root.crt', sslcert='postgresql.crt', sslkey='postgresql.key')
+
+
 cur = conn.cursor()
 conn.set_client_encoding('Latin1')
 path = 'PATH TO DIRECTORY'

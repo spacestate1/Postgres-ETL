@@ -6,7 +6,7 @@
  mkdir $PWD/extracted_av
  fi
 
- #///////////////// POLLSTORE COMBINER /////////////////
+ #///////////////// TEXT FILE COMBINER /////////////////
 
  for F3 in $directory2
     do
